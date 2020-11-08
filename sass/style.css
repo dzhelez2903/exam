@@ -1,107 +1,147 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
-  font-family: 'aleo regular';
-  src: url(../fonts/aleo-regular-webfont.ttf);
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'aleo regular';
+    src: url(../fonts/aleo-regular-webfont.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Josefin Sans Bold';
-  src: url(../fonts/JosefinSans-Bold.ttf);
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Josefin Sans Bold';
+    src: url(../fonts/JosefinSans-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Josefin Sans Regular';
-  src: url(../fonts/JosefinSans-Regular.ttf);
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Josefin Sans Regular';
+    src: url(../fonts/JosefinSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 header {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-width: 1770px;
-  min-height: 740px;
-  background: url(../img/background1.png) no-repeat;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 267px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 1770px;
+    height: 820px;
+    background: url(../img/background1.png) no-repeat;
+    padding-top: 267px;
 }
 
 header h1 {
-  text-transform: uppercase;
-  font-family: 'Josefin Sans';
-  font-size: 48pt;
-  color: #ffffff;
-  font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans';
+    font-size: 48pt;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 header p {
-  font-family: 'Josefin Sans';
-  font-size: 19pt;
-  color: #ffffff;
-  font-weight: normal;
-  letter-spacing: 5pt;
-  margin-bottom: 55px;
+    font-family: 'Josefin Sans';
+    font-size: 19pt;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 5pt;
+    margin-bottom: 55px;
 }
 
 header input {
-  font-family: 'Josefin Sans';
-  font-size: 14pt;
-  color: #999999;
-  font-weight: normal;
-  background-color: #ffffff;
-  min-width: 503px;
-  min-height: 60px;
-  text-align: center;
-  border: none;
-}
-
-header input ::-ms-clear {
-  display: none;
+    font-family: 'Josefin Sans';
+    font-size: 14pt;
+    color: #999999;
+    font-weight: normal;
+    background-color: #ffffff;
+    min-width: 650px;
+    min-height: 60px;
+    text-align: center;
+    border: none;
+    position: relative;
+    left: 75px;
 }
 
 header input :active,
 header :hover,
 header :focus {
-  outline: 0;
-  outline-offset: 0;
+    outline: 0;
+    outline-offset: 0;
 }
 
 header button {
-  min-width: 145px;
-  min-height: 60px;
-  background-color: #5474fd;
-  font-family: 'aleo regular';
-  text-transform: uppercase;
-  font-size: 14pt;
-  color: #ffffff;
-  border: solid 2px #ffffff;
-  position: relative;
-  right: 4px;
-  top: 2px;
+    min-width: 145px;
+    min-height: 56px;
+    background-color: #5474fd;
+    font-family: 'aleo regular';
+    text-transform: uppercase;
+    font-size: 14pt;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    right: 76px;
+    top: 4.5px;
+    margin: 0 auto;
 }
 
 header button :active,
 header :hover,
 header :focus {
-  outline: 0;
-  outline-offset: 0;
+    outline: 0;
+    outline-offset: 0;
 }
+
+header a {
+    text-decoration: none;
+    font-family: 'Josefin Sans';
+    color: #ffffff;
+    font-size: 14pt;
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+
+header div {
+    width: 1770px;
+    height: 80px;
+    position: relative;
+    top: 134px;
+    background-color: #5474fd;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline;
+}
+
+header div p {
+    display: inline;
+    font-family: 'Josefin Sans';
+    font-size: 19pt;
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+
+header div li {
+    list-style: none;
+    display: inline;
+    position: relative;
+    top: 30px;
+    left: 913px;
+    font-family: 'aleo';
+    font-size: 12pt;
+    font-weight: normal;
+    margin-right: 40px;
+}
+
 /*# sourceMappingURL=style.css.map */
