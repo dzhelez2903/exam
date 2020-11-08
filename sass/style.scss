@@ -30,7 +30,7 @@ header {
     flex-flow: column;
     align-items: center;
     width: 1770px;
-    height: 820px;
+    height: 553px;
     background: url(../img/background1.png) no-repeat;
     padding-top: 267px;
 
@@ -135,6 +135,103 @@ header {
             font-size: 12pt;
             font-weight: normal;
             margin-right: 40px;
+        }
+    }
+}
+
+section {
+    width: 1770px;
+    height: 1022px;
+    background: url(../img/background2.png) no-repeat;
+    margin: 0 auto;
+    display: flex;
+
+    div {
+        width: 540px;
+        height: 340px;
+        position: relative;
+        top: 220px;
+        left: 330px;
+
+        h2 {
+            font-family: 'Aleo';
+            font-weight: normal;
+            font-size: 26pt;
+            color: #ffffff;
+            margin-bottom: 70px;
+        }
+
+        p {
+            font-family: 'Josefin Sans';
+            font-size: 12pt;
+            color: #e8e8e8;
+            margin-bottom: 40px;
+        }
+
+        .button {
+            width: 225px;
+            height: 60px;
+            background-color: #5474fd;
+            opacity: 0.7;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: none;
+            font-family: 'Aleo';
+            font-size: 16pt;
+            color: #ffffff;
+        }
+
+        .button :active,
+        :hover,
+        :focus {
+            outline: 0;
+            outline-offset: 0;
+        }
+
+        #image_1 {
+            position: absolute;
+            top: -150px;
+            left: 650px;
+        }
+
+        #image_2 {
+            position: absolute;
+            top: 75px;
+            left: 770px;
+        }
+
+        #dark_grey {
+            width: 1770px;
+            height: 335px;
+            background-color: #333333;
+            position: relative;
+            top: 118px;
+            left: -330px;
+
+            :nth-child(5) {
+                position: absolute;
+                top: 220px;
+                left: 380px;
+            }
+
+            :nth-child(6) {
+                position: absolute;
+                top: 220px;
+                left: 800px;
+            }
+
+            :nth-child(7) {
+                position: absolute;
+                top: 220px;
+                left: 1200px;
+            }
+
+            p {
+                display: inline-block;
+                font-family: 'Aleo';
+                font-size: 26pt;
+                color: #ffffff;
+            }
         }
     }
 }
