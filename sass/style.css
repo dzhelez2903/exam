@@ -89,6 +89,7 @@ header button {
   text-transform: uppercase;
   font-size: 14pt;
   color: #ffffff;
+  cursor: pointer;
   border: none;
   position: relative;
   right: 76px;
@@ -190,6 +191,7 @@ section div .button {
   font-family: 'Aleo';
   font-size: 16pt;
   color: #ffffff;
+  cursor: pointer;
 }
 
 section div .button :active,
