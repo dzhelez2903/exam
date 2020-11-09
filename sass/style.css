@@ -93,7 +93,7 @@ header button {
   border: none;
   position: relative;
   right: 76px;
-  top: 4.5px;
+  top: 4px;
   margin: 0 auto;
 }
 
@@ -147,7 +147,7 @@ header div li {
   margin-right: 40px;
 }
 
-section {
+#first_section {
   width: 1770px;
   height: 1000px;
   background: url(../img/background2.png) no-repeat;
@@ -157,7 +157,7 @@ section {
   display: flex;
 }
 
-section div {
+#first_section div {
   width: 540px;
   height: 340px;
   position: relative;
@@ -165,7 +165,7 @@ section div {
   left: 330px;
 }
 
-section div h2 {
+#first_section div h2 {
   font-family: 'Aleo';
   font-weight: normal;
   font-size: 26pt;
@@ -173,14 +173,142 @@ section div h2 {
   margin-bottom: 70px;
 }
 
-section div p {
+#first_section div p {
   font-family: 'Josefin Sans';
   font-size: 12pt;
   color: #e8e8e8;
   margin-bottom: 40px;
 }
 
-section div .button {
+#first_section div #image_1 {
+  position: absolute;
+  top: -150px;
+  left: 650px;
+}
+
+#first_section div #image_2 {
+  position: absolute;
+  top: 75px;
+  left: 770px;
+}
+
+#first_section div #dark_grey {
+  width: 1770px;
+  height: 335px;
+  background-color: #333333;
+  position: relative;
+  top: 118px;
+  left: -330px;
+}
+
+#first_section div #dark_grey :nth-child(5) {
+  position: absolute;
+  top: 220px;
+  left: 380px;
+}
+
+#first_section div #dark_grey :nth-child(6) {
+  position: absolute;
+  top: 220px;
+  left: 800px;
+}
+
+#first_section div #dark_grey :nth-child(7) {
+  position: absolute;
+  top: 220px;
+  left: 1200px;
+}
+
+#first_section div #dark_grey p {
+  display: inline-block;
+  font-family: 'Aleo';
+  font-size: 26pt;
+  color: #ffffff;
+}
+
+#second_section {
+  background: url(../img/background3.png) no-repeat;
+  width: 1770px;
+  height: 700px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#second_section div {
+  width: 540px;
+  height: 370px;
+  background-color: #312b28;
+  color: #ffffff;
+  opacity: 0.9;
+  position: relative;
+  top: 230px;
+  left: 300px;
+  padding-left: 30px;
+}
+
+#second_section div :nth-child(1) {
+  font-family: 'Josefin Sans';
+  font-size: 20pt;
+  margin-top: 50px;
+}
+
+#second_section div :nth-child(2) {
+  font-family: 'Josefin Sans';
+  font-size: 20pt;
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+
+#second_section div :nth-child(3) {
+  font-family: 'Josefin Sans';
+  font-size: 12pt;
+  margin-top: 35px;
+}
+
+#third_section {
+  background: url(../img/background4.png) no-repeat;
+  width: 1770px;
+  height: 700px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#third_section div {
+  width: 540px;
+  height: 370px;
+  background-color: #312b28;
+  color: #ffffff;
+  opacity: 0.9;
+  position: relative;
+  top: 228px;
+  left: 902px;
+  padding-left: 30px;
+}
+
+#third_section div :nth-child(1) {
+  font-family: 'Josefin Sans';
+  font-size: 20pt;
+  margin-top: 50px;
+}
+
+#third_section div :nth-child(2) {
+  font-family: 'Josefin Sans';
+  font-size: 20pt;
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+
+#third_section div :nth-child(3) {
+  font-family: 'Josefin Sans';
+  font-size: 12pt;
+  margin-top: 35px;
+}
+
+.button {
   width: 225px;
   height: 60px;
   background-color: #5474fd;
@@ -192,88 +320,13 @@ section div .button {
   font-size: 16pt;
   color: #ffffff;
   cursor: pointer;
-}
-
-section div .button :active,
-section div :hover,
-section div :focus {
-  outline: 0;
-  outline-offset: 0;
-}
-
-section div #image_1 {
-  position: absolute;
-  top: -150px;
-  left: 650px;
-}
-
-section div #image_2 {
-  position: absolute;
-  top: 75px;
-  left: 770px;
-}
-
-section div #dark_grey {
-  width: 1770px;
-  height: 335px;
-  background-color: #333333;
-  position: relative;
-  top: 118px;
-  left: -330px;
-}
-
-section div #dark_grey :nth-child(5) {
-  position: absolute;
-  top: 220px;
-  left: 380px;
-}
-
-section div #dark_grey :nth-child(6) {
-  position: absolute;
-  top: 220px;
-  left: 800px;
-}
-
-section div #dark_grey :nth-child(7) {
-  position: absolute;
-  top: 220px;
-  left: 1200px;
-}
-
-section div #dark_grey p {
-  display: inline-block;
-  font-family: 'Aleo';
-  font-size: 26pt;
-  color: #ffffff;
-}
-
-#second_section {
-  background: url(../img/background3.png) no-repeat;
-}
-
-#second_section div {
-  width: 540px;
-  background-color: #312b28;
-  font-family: 'Josefin Sans';
-  color: #ffffff;
-  opacity: 0.9;
-  position: relative;
-  top: 240px;
-  padding-left: 30px;
-  padding-top: 50px;
-}
-
-#second_section div :nth-child(1) {
-  font-size: 20pt;
-}
-
-#second_section div :nth-child(2) {
-  font-size: 20pt;
-  text-transform: uppercase;
   line-height: 0;
 }
 
-#second_section div :nth-child(1) {
-  font-size: 16pt;
+.button :active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 /*# sourceMappingURL=style.css.map */
