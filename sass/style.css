@@ -149,7 +149,7 @@ header div li {
 
 section {
   width: 1770px;
-  height: 1022px;
+  height: 1000px;
   background: url(../img/background2.png) no-repeat;
   margin: 0 auto;
   display: -webkit-box;
@@ -245,5 +245,35 @@ section div #dark_grey p {
   font-family: 'Aleo';
   font-size: 26pt;
   color: #ffffff;
+}
+
+#second_section {
+  background: url(../img/background3.png) no-repeat;
+}
+
+#second_section div {
+  width: 540px;
+  background-color: #312b28;
+  font-family: 'Josefin Sans';
+  color: #ffffff;
+  opacity: 0.9;
+  position: relative;
+  top: 240px;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+#second_section div :nth-child(1) {
+  font-size: 20pt;
+}
+
+#second_section div :nth-child(2) {
+  font-size: 20pt;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+#second_section div :nth-child(1) {
+  font-size: 16pt;
 }
 /*# sourceMappingURL=style.css.map */

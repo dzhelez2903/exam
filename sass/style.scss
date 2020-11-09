@@ -143,7 +143,7 @@ header {
 
 section {
     width: 1770px;
-    height: 1022px;
+    height: 1000px;
     background: url(../img/background2.png) no-repeat;
     margin: 0 auto;
     display: flex;
@@ -238,3 +238,32 @@ section {
         }
     }
 }
+
+#second_section {
+    background: url(../img/background3.png) no-repeat;
+
+    div {
+        width: 540px;
+        background-color: #312b28;
+        font-family: 'Josefin Sans';
+        color: #ffffff;
+        opacity: 0.9;
+        position: relative;
+        top: 240px;
+        padding-left: 30px;
+        padding-top: 50px;
+
+        :nth-child(1) {
+            font-size: 20pt;
+        }
+
+        :nth-child(2) {
+            font-size: 20pt;
+            text-transform: uppercase;
+            line-height: 0;
+        }
+        :nth-child(1) {
+            font-size: 16pt;
+            }
+        }
+    }
