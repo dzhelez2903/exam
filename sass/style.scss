@@ -103,16 +103,7 @@ header {
         outline-offset: 0;
     }
 
-    a {
-        text-decoration: none;
-        font-family: 'Josefin Sans';
-        color: #ffffff;
-        font-size: 14pt;
-        margin-top: 100px;
-        margin-bottom: 5px;
-    }
-
-    div {
+    #menu {
         max-width: 1770px;
         min-width: 1200px;
         width: 100%;
@@ -123,7 +114,6 @@ header {
         text-transform: uppercase;
         color: #ffffff;
         display: flex;
-
 
         p {
             font-family: 'Josefin Sans';
@@ -152,6 +142,13 @@ header {
             font-size: 12pt;
             font-weight: normal;
             margin-right: 2.26%;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Josefin Sans';
+            color: #ffffff;
+            font-size: 14pt;
         }
     }
 }
@@ -349,7 +346,7 @@ header {
         margin-top: 97px;
     }
 
-    div {
+    #block {
         max-width: 1110px;
         width: 62.14%;
         height: 284px;
@@ -361,7 +358,7 @@ header {
         font-weight: normal;
         text-align: left;
 
-        img {
+        :nth-child(1) {
             float: left;
             margin-right: 55px;
         }
@@ -396,6 +393,7 @@ footer {
     background-color: #232323;
     font-family: 'Josefin Sans';
     color: #ffffff;
+    justify-content: center;
 
     h2 {
         font-size: 24pt;
@@ -447,7 +445,6 @@ footer {
     color: #ffffff;
     cursor: pointer;
     line-height: 0;
-
 }
 
 .button :active,
@@ -455,4 +452,21 @@ footer {
 :focus {
     outline: 0;
     outline-offset: 0;
+}
+
+.scroll {
+    position: relative;
+    text-align: center;
+    top: 150px;
+
+    a {
+        text-decoration: none;
+        font-family: 'Josefin Sans';
+        color: #ffffff;
+        font-size: 14pt;
+    }
+
+    :hover {
+        color: #5474fd;
+    }
 }

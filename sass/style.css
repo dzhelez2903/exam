@@ -110,16 +110,7 @@ header :focus {
   outline-offset: 0;
 }
 
-header a {
-  text-decoration: none;
-  font-family: 'Josefin Sans';
-  color: #ffffff;
-  font-size: 14pt;
-  margin-top: 100px;
-  margin-bottom: 5px;
-}
-
-header div {
+header #menu {
   max-width: 1770px;
   min-width: 1200px;
   width: 100%;
@@ -134,7 +125,7 @@ header div {
   display: flex;
 }
 
-header div p {
+header #menu p {
   font-family: 'Josefin Sans';
   font-size: 19pt;
   font-weight: bold;
@@ -143,7 +134,7 @@ header div p {
   left: 18.65%;
 }
 
-header div ul {
+header #menu ul {
   position: relative;
   top: 33px;
   left: 45%;
@@ -161,13 +152,20 @@ header div ul {
           justify-content: space-between;
 }
 
-header div li {
+header #menu li {
   text-decoration: none;
   list-style: none;
   font-family: 'aleo';
   font-size: 12pt;
   font-weight: normal;
   margin-right: 2.26%;
+}
+
+header #menu a {
+  text-decoration: none;
+  font-family: 'Josefin Sans';
+  color: #ffffff;
+  font-size: 14pt;
 }
 
 #first_section {
@@ -379,7 +377,7 @@ header div li {
   margin-top: 97px;
 }
 
-#fourth_section div {
+#fourth_section #block {
   max-width: 1110px;
   width: 62.14%;
   height: 284px;
@@ -392,12 +390,12 @@ header div li {
   text-align: left;
 }
 
-#fourth_section div img {
+#fourth_section #block :nth-child(1) {
   float: left;
   margin-right: 55px;
 }
 
-#fourth_section div :nth-child(2) {
+#fourth_section #block :nth-child(2) {
   font-size: 16pt;
   color: #fefefe;
   text-transform: uppercase;
@@ -405,7 +403,7 @@ header div li {
   text-align: left;
 }
 
-#fourth_section div :nth-child(3) {
+#fourth_section #block :nth-child(3) {
   font-size: 12pt;
   color: #e8e8e8;
   margin-top: 50px;
@@ -432,6 +430,9 @@ footer {
   background-color: #232323;
   font-family: 'Josefin Sans';
   color: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer h2 {
@@ -497,5 +498,22 @@ footer li :hover {
 :focus {
   outline: 0;
   outline-offset: 0;
+}
+
+.scroll {
+  position: relative;
+  text-align: center;
+  top: 150px;
+}
+
+.scroll a {
+  text-decoration: none;
+  font-family: 'Josefin Sans';
+  color: #ffffff;
+  font-size: 14pt;
+}
+
+.scroll :hover {
+  color: #5474fd;
 }
 /*# sourceMappingURL=style.css.map */
