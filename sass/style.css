@@ -33,7 +33,7 @@
   text-decoration: none;
   border: none;
   font-family: 'Aleo';
-  font-size: 16pt;
+  font-size: 12pt;
   color: #ffffff;
   cursor: pointer;
   line-height: 0;
@@ -227,14 +227,14 @@ header #menu a {
 #first_section div h2 {
   font-family: 'Aleo';
   font-weight: normal;
-  font-size: 26pt;
+  font-size: 24pt;
   color: #ffffff;
   margin-bottom: 70px;
 }
 
 #first_section div p {
   font-family: 'Josefin Sans';
-  font-size: 12pt;
+  font-size: 10pt;
   line-height: 20px;
   color: #e8e8e8;
   margin-bottom: 40px;
@@ -265,21 +265,25 @@ header #menu a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 #dark_grey :nth-child(1) {
-  top: 1650px;
-  left: 28%;
+  position: absolute;
+  top: 75px;
+  left: 26%;
 }
 
 #dark_grey :nth-child(2) {
-  top: 1650px;
-  left: 46.1%;
+  position: absolute;
+  top: 75px;
+  left: 48.7%;
 }
 
 #dark_grey :nth-child(3) {
-  top: 1650px;
-  left: 63%;
+  position: absolute;
+  top: 75px;
+  left: 71%;
 }
 
 #dark_grey div {
@@ -318,31 +322,31 @@ header #menu a {
 }
 
 #second_section div {
-  width: 30.51%;
-  height: 370px;
+  width: 28.7%;
+  height: 310px;
   background-color: #312b28;
   color: #ffffff;
   opacity: 0.9;
   position: relative;
   top: 230px;
   left: 17%;
-  padding-left: 30px;
+  padding: 30px;
   font-family: 'Josefin Sans';
 }
 
 #second_section div p:nth-child(1) {
-  font-size: 20pt;
-  margin-top: 50px;
+  font-size: 18pt;
+  margin-top: 20px;
 }
 
 #second_section div :nth-child(2) {
-  font-size: 20pt;
+  font-size: 18pt;
   text-transform: uppercase;
   margin-top: 35px;
 }
 
 #second_section div :nth-child(3) {
-  font-size: 12pt;
+  font-size: 10pt;
   margin-top: 35px;
   margin-bottom: 35px;
   line-height: 20px;
@@ -361,31 +365,31 @@ header #menu a {
 }
 
 #third_section div {
-  width: 30.51%;
-  height: 370px;
+  width: 28.7%;
+  height: 310px;
   background-color: #312b28;
   color: #ffffff;
   opacity: 0.9;
   position: relative;
   top: 236px;
   left: 50.2%;
-  padding-left: 30px;
+  padding: 30px;
   font-family: 'Josefin Sans';
 }
 
 #third_section div p:nth-child(1) {
-  font-size: 20pt;
-  margin-top: 50px;
+  font-size: 18pt;
+  margin-top: 20px;
 }
 
 #third_section div :nth-child(2) {
-  font-size: 20pt;
+  font-size: 18pt;
   text-transform: uppercase;
   margin-top: 35px;
 }
 
 #third_section div :nth-child(3) {
-  font-size: 12pt;
+  font-size: 10pt;
   margin-top: 35px;
   margin-bottom: 35px;
   line-height: 20px;
@@ -418,34 +422,30 @@ header #menu a {
 
 #fourth_section #block {
   max-width: 1110px;
-  width: 62.14%;
-  height: 284px;
+  width: 30.79%;
+  height: 184px;
   position: relative;
   top: 110px;
   left: 19%;
+  background: url(../img/Image3.png) no-repeat;
   background-color: #333333;
   font-family: 'Josefin Sans';
   font-weight: normal;
   text-align: left;
+  padding: 50px 50px 50px 505px;
 }
 
 #fourth_section #block :nth-child(1) {
-  float: left;
-  margin-right: 55px;
-}
-
-#fourth_section #block :nth-child(2) {
-  font-size: 16pt;
+  font-size: 14pt;
   color: #fefefe;
   text-transform: uppercase;
-  margin-top: 50px;
   text-align: left;
 }
 
-#fourth_section #block :nth-child(3) {
-  font-size: 12pt;
+#fourth_section #block :nth-child(2) {
+  font-size: 10pt;
   color: #e8e8e8;
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: left;
   line-height: 30px;
 }
