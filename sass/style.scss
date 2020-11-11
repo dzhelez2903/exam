@@ -24,6 +24,45 @@
     font-style: normal;
 }
 
+.button {
+    width: 225px;
+    height: 60px;
+    background-color: #5474fd;
+    opacity: 0.7;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    font-family: 'Aleo';
+    font-size: 16pt;
+    color: #ffffff;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.button :active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.scroll {
+    position: relative;
+    text-align: center;
+    top: 150px;
+
+    a {
+        text-decoration: none;
+        font-family: 'Josefin Sans';
+        color: #ffffff;
+        font-size: 14pt;
+    }
+
+    :hover {
+        color: #5474fd;
+    }
+}
+
 header {
     margin: 0 auto;
     display: flex;
@@ -429,44 +468,5 @@ footer {
 
     li :hover {
         fill: #5474fd;
-    }
-}
-
-.button {
-    width: 225px;
-    height: 60px;
-    background-color: #5474fd;
-    opacity: 0.7;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: none;
-    font-family: 'Aleo';
-    font-size: 16pt;
-    color: #ffffff;
-    cursor: pointer;
-    line-height: 0;
-}
-
-.button :active,
-:hover,
-:focus {
-    outline: 0;
-    outline-offset: 0;
-}
-
-.scroll {
-    position: relative;
-    text-align: center;
-    top: 150px;
-
-    a {
-        text-decoration: none;
-        font-family: 'Josefin Sans';
-        color: #ffffff;
-        font-size: 14pt;
-    }
-
-    :hover {
-        color: #5474fd;
     }
 }
