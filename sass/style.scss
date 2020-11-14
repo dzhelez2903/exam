@@ -242,49 +242,63 @@ header {
     max-width: 1770px;
     min-width: 1200px;
     width: 100%;
-    height: 335px;
-    background: url(../img/lines.svg) no-repeat;
-    background-size: 43.73%;
-    background-position: 50% 45px;
+    height: calc(335px - 64px);
     background-color: #333333;
+    padding-top: 44px;
     margin: 0 auto;
-    display: flex;
-    position: relative;
-
-    :nth-child(1) {
-        position: absolute;
-        top: 75px;
-        left: 26%;
-    }
-
-    :nth-child(2) {
-        position: absolute;
-        top: 75px;
-        left: 48.7%;
-    }
-
-    :nth-child(3) {
-        position: absolute;
-        top: 75px;
-        left: 71%;
-    }
-
-    div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        position: absolute;
-        margin: 0;
-        padding: 0;
-    }
-
-    p {
-        font-family: 'Aleo';
-        font-size: 26pt;
-        color: #ffffff;
-    }
+    font-family: 'Aleo';
+    font-size: 26pt;
+    color: #ffffff;
 }
+
+#dark_grey .grid_container {
+    transform: translate(45%, 0);
+    width: 55.08%;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: 97px auto auto;
+    grid-template-areas:
+        ". line line line line line line ."
+        "search search . check check . like like"
+        "stext stext . chtext chtext . ltext ltext";
+    justify-items: center;
+    align-items: center;
+}
+
+#dark_grey div.grid_container div.line {
+    height: 97px;
+    width: 100%;
+    grid-area: line;
+    background-image: url(../img/lines.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+#dark_grey .search {
+    grid-area: search;
+}
+
+#dark_grey .check {
+    grid-area: check;
+}
+
+#dark_grey .like {
+    grid-area: like;
+}
+
+#dark_grey .stext {
+    grid-area: stext;
+}
+
+#dark_grey .chtext {
+    grid-area: chtext;
+}
+
+#dark_grey .ltext {
+    grid-area: ltext;
+}
+
 
 #second_section {
     background: url(../img/background3.png) no-repeat;
@@ -401,7 +415,7 @@ header {
         font-weight: normal;
         text-align: left;
         padding: 50px 50px 50px 505px;
-        
+
 
         :nth-child(1) {
             font-size: 14pt;
