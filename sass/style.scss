@@ -281,6 +281,8 @@ header {
 
 #dark_grey .check {
     grid-area: check;
+    position: relative;
+    left: 3%;
 }
 
 #dark_grey .like {

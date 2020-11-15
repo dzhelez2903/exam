@@ -306,6 +306,8 @@ header #menu a {
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-area: check;
+  position: relative;
+  left: 3%;
 }
 
 #dark_grey .like {
