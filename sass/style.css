@@ -228,19 +228,21 @@
     background-color: #333333;
     margin: 0 auto;
     font-family: 'Aleo';
-    font-size: 8pt;
+    font-size: 9pt;
     color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   #dark_grey .grid_container {
-    -webkit-transform: translate(45%, 0);
-            transform: translate(45%, 0);
-    width: 55.08%;
+    -webkit-transform: translate(7%, 0);
+            transform: translate(7%, 0);
+    width: 90%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (12.5%)[8];
         grid-template-columns: repeat(8, 12.5%);
-    -ms-grid-rows: 45px auto 40px;
-        grid-template-rows: 45px auto 40px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
         grid-template-areas: ". line line line line line line ." "search search . check check . like like" "stext stext . chtext chtext . ltext ltext";
     justify-items: center;
     -webkit-box-align: center;

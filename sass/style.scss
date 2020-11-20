@@ -221,16 +221,18 @@
         background-color: #333333;
         margin: 0 auto;
         font-family: 'Aleo';
-        font-size: 8pt;
+        font-size: 9pt;
         color: #ffffff;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     #dark_grey .grid_container {
-        transform: translate(45%, 0);
-        width: 55.08%;
+        transform: translate(7%, 0);
+        width: 90%;
         display: grid;
         grid-template-columns: repeat(8, 12.5%);
-        grid-template-rows: 45px auto 40px;
+        grid-template-rows: auto;
         grid-template-areas:
             ". line line line line line line ."
             "search search . check check . like like"
