@@ -49,7 +49,7 @@
 .scroll {
     position: relative;
     text-align: center;
-    top: 130px;
+    top: 40px;
 
     a {
         text-decoration: none;
@@ -72,9 +72,9 @@
         align-items: center;
         max-width: 480px;
         width: 100%;
-        height: 553px;
+        height: 473px;
         background: url(../img/background1.png) no-repeat;
-        padding-top: 180px;
+        padding-top: 50px;
 
         h1 {
             text-transform: uppercase;
@@ -132,7 +132,7 @@
             width: 100%;
             height: 120px;
             position: absolute;
-            top: 613px;
+            top: 403px;
             background-color: #5474fd;
             text-transform: uppercase;
             color: #ffffff;
@@ -150,7 +150,7 @@
 
             ul {
                 position: relative;
-                top: 38px;
+                top: 32px;
                 min-width: 480px;
                 display: flex;
                 flex-direction: column;
@@ -174,7 +174,7 @@
     #first_section {
         max-width: 480px;
         width: 100%;
-        height: 685px;
+        height: 485px;
         background: url(../img/background2.png) no-repeat;
         margin: 0 auto;
         display: flex;
@@ -184,7 +184,7 @@
             width: 70%;
             height: 340px;
             position: relative;
-            top: 30%;
+            top: 20%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -279,7 +279,7 @@
         background: url(../img/background3.png) no-repeat;
         max-width: 480px;
         width: 100%;
-        height: 700px;
+        height: 500px;
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -291,7 +291,7 @@
             color: #ffffff;
             opacity: 0.9;
             position: relative;
-            top: 20%;
+            top: 10%;
             padding: 30px;
             font-family: 'Josefin Sans';
 
@@ -319,7 +319,7 @@
         background: url(../img/background4.png) no-repeat;
         max-width: 480px;
         width: 100%;
-        height: 700px;
+        height: 500px;
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -331,7 +331,7 @@
             color: #ffffff;
             opacity: 0.9;
             position: relative;
-            top: 20%;
+            top: 10%;
             padding: 30px;
             font-family: 'Josefin Sans';
 
@@ -359,7 +359,7 @@
         background: url(../img/background5.png) no-repeat;
         max-width: 480px;
         width: 100%;
-        height: 720px;
+        height: 520px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -370,13 +370,13 @@
             font-weight: normal;
             color: #ffffff;
             text-align: center;
-            margin-top: 97px;
+            margin-top: 60px;
         }
 
         #block {
             width: 80%;
             position: relative;
-            top: 110px;
+            top: 5%;
             left: 5.5%;
             background-color: #333333;
             font-family: 'Josefin Sans';
