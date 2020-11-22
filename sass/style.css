@@ -49,14 +49,12 @@
 .scroll {
   position: relative;
   text-align: center;
-  top: 40px;
 }
 
 .scroll a {
   text-decoration: none;
   font-family: 'Josefin Sans';
   color: #ffffff;
-  font-size: 14pt;
 }
 
 .scroll :hover {
@@ -112,6 +110,8 @@
     min-height: 60px;
     text-align: center;
     border: none;
+    position: relative;
+    top: 70px;
   }
   header button {
     width: 100%;
@@ -125,15 +125,15 @@
     border: 2px solid #ffffff;
     position: relative;
     right: 0%;
-    top: 0%;
+    top: 70px;
     margin: 0 0;
   }
-  header #menu {
+  header .menu {
     max-width: 480px;
     width: 100%;
-    height: 120px;
+    height: 40px;
     position: absolute;
-    top: 403px;
+    top: 483px;
     background-color: #5474fd;
     text-transform: uppercase;
     color: #ffffff;
@@ -141,42 +141,116 @@
     display: -ms-flexbox;
     display: flex;
   }
-  header #menu p {
+  header .menu p {
     font-family: 'Josefin Sans';
     font-size: 15pt;
     font-weight: bold;
     position: absolute;
-    top: 10px;
+    top: 12px;
     text-align: center;
     left: 33%;
   }
-  header #menu ul {
-    position: relative;
-    top: 32px;
-    min-width: 480px;
+  header .menu .menu-list {
+    display: none;
+  }
+  header .menu .hamburger-menu {
+    display: inline-block;
+  }
+  header .menu .hamburger-menu #menu__toggle {
+    opacity: 0;
+  }
+  header .menu .hamburger-menu #menu__toggle:checked ~ .menu__btn > span {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header .menu .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  header .menu .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  header .menu .hamburger-menu #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  header .menu .hamburger-menu .menu__btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
   }
-  header #menu li {
+  header .menu .hamburger-menu .menu__btn > span,
+  header .menu .hamburger-menu .menu__btn > span::before,
+  header .menu .hamburger-menu .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+  }
+  header .menu .hamburger-menu .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  header .menu .hamburger-menu .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  header .menu .hamburger-menu .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    max-width: 480px;
+    width: 100%;
+    height: 323px;
+    margin: 0;
+    padding: 80px 0;
     list-style: none;
-    text-align: center;
+    background-color: #5473fd;
+    -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
   }
-  header #menu a {
-    text-decoration: none;
-    font-family: 'Josefin Sans';
+  header .menu .hamburger-menu .menu__box .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'aleo';
+    font-size: 12pt;
     color: #ffffff;
-    font-size: 11pt;
-    line-height: 20px;
+    text-decoration: none;
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+  }
+  header .menu .hamburger-menu .menu__box .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  header .scroll {
+    top: 130px;
+    font-size: 10pt;
   }
   #first_section {
     max-width: 480px;
     width: 100%;
-    height: 485px;
+    height: 657px;
     background: url(../img/background2.png) no-repeat;
     margin: 0 auto;
     display: -webkit-box;
@@ -185,12 +259,14 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    position: relative;
   }
   #first_section div {
     width: 70%;
     height: 340px;
-    position: relative;
-    top: 20%;
+    position: absolute;
+    top: 47%;
+    left: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -217,10 +293,21 @@
     margin-bottom: 30px;
   }
   #first_section #image_1 {
-    display: none;
+    width: 220px;
+    height: 138px;
+    position: relative;
+    top: 20px;
+    left: 20px;
   }
   #first_section #image_2 {
-    display: none;
+    width: 220px;
+    height: 138px;
+    position: relative;
+    top: 168px;
+    right: 20px;
+  }
+  #first_section .button {
+    width: 45%;
   }
   #dark_grey {
     max-width: 480px;
@@ -312,7 +399,7 @@
             justify-content: center;
   }
   #second_section div {
-    width: 80%;
+    width: 70%;
     height: 310px;
     background-color: #312b28;
     color: #ffffff;
@@ -337,6 +424,9 @@
     margin-bottom: 35px;
     line-height: 20px;
   }
+  #second_section div .button {
+    width: 45%;
+  }
   #third_section {
     background: url(../img/background4.png) no-repeat;
     max-width: 480px;
@@ -351,7 +441,7 @@
             justify-content: center;
   }
   #third_section div {
-    width: 80%;
+    width: 70%;
     height: 310px;
     background-color: #312b28;
     color: #ffffff;
@@ -376,11 +466,14 @@
     margin-bottom: 35px;
     line-height: 20px;
   }
+  #third_section div .button {
+    width: 45%;
+  }
   #fourth_section {
     background: url(../img/background5.png) no-repeat;
     max-width: 480px;
     width: 100%;
-    height: 520px;
+    height: 719px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -396,18 +489,19 @@
     font-weight: normal;
     color: #ffffff;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 20px;
   }
   #fourth_section #block {
     width: 80%;
     position: relative;
-    top: 5%;
+    top: 3%;
     left: 5.5%;
+    background: url(../img/Image3.png) no-repeat;
     background-color: #333333;
     font-family: 'Josefin Sans';
     font-weight: normal;
     text-align: left;
-    padding: 20px 20px 20px 20px;
+    padding: 304px 20px 20px 20px;
   }
   #fourth_section #block :nth-child(1) {
     font-size: 14pt;
@@ -421,6 +515,10 @@
     margin-top: 30px;
     text-align: left;
     line-height: 30px;
+  }
+  .scroll {
+    top: 30px;
+    font-size: 10pt;
   }
   footer {
     max-width: 480px;
@@ -560,7 +658,7 @@
     outline: 0;
     outline-offset: 0;
   }
-  header #menu {
+  header .menu {
     max-width: 1770px;
     min-width: 1200px;
     width: 100%;
@@ -574,7 +672,7 @@
     display: -ms-flexbox;
     display: flex;
   }
-  header #menu p {
+  header .menu p {
     font-family: 'Josefin Sans';
     font-size: 19pt;
     font-weight: bold;
@@ -582,7 +680,7 @@
     top: 30px;
     left: 18.65%;
   }
-  header #menu ul {
+  header .menu ul.menu-list {
     position: relative;
     top: 33px;
     left: 45%;
@@ -599,7 +697,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  header #menu li {
+  header .menu ul.menu-list li {
     text-decoration: none;
     list-style: none;
     font-family: 'aleo';
@@ -607,10 +705,17 @@
     font-weight: normal;
     margin-right: 2.26%;
   }
-  header #menu a {
+  header .menu ul.menu-list li a {
     text-decoration: none;
     font-family: 'Josefin Sans';
     color: #ffffff;
+    font-size: 14pt;
+  }
+  header .menu .hamburger-menu {
+    display: none;
+  }
+  .scroll {
+    top: 165px;
     font-size: 14pt;
   }
   #first_section {
@@ -854,6 +959,10 @@
     margin-top: 30px;
     text-align: left;
     line-height: 30px;
+  }
+  #fourth_section .scroll {
+    top: 250px;
+    font-size: 14pt;
   }
   footer {
     max-width: 1770px;
