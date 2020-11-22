@@ -213,9 +213,9 @@
   }
   header .menu .hamburger-menu .menu__box {
     display: block;
-    position: fixed;
+    position: absolute;
     visibility: hidden;
-    top: 0;
+    top: -1207%;
     left: -100%;
     max-width: 480px;
     width: 100%;
