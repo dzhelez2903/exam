@@ -241,7 +241,7 @@
             transition-duration: .25s;
   }
   header .menu .hamburger-menu .menu__box .menu__item:hover {
-    background-color: #CFD8DC;
+    background-color: rgba(207, 216, 220, 0.3);
   }
   header .scroll {
     top: 130px;
